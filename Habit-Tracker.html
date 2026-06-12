@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div>
+        <h1>Habit Tracker</h1>
+        <p class="subtitle">Stay consistent, one day at a time.</p>
+      </div>
+      <span id="date-chip" class="date-chip"></span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Stats Section -->
+    <section class="stats-grid" id="stats-grid"></section>
+
+    <!-- Add Habit Section -->
+    <section class="card">
+      <h2 class="card-title">New Habit</h2>
+      <div class="input-row">
+        <input type="text" id="habit-input" placeholder="e.g. Drink 8 glasses of water" maxlength="60" />
+        <select id="habit-cat">
+          <option value="health">Health</option>
+          <option value="personal">Personal</option>
+          <option value="work">Work</option>
+          <option value="school">School</option>
+          <option value="other">Other</option>
+        </select>
+        <button onclick="addHabit()">+ Add</button>
+      </div>
+      <p class="err" id="habit-err"></p>
+    </section>
+
+    <!-- Habits List Section -->
+    <section class="card">
+      <h2 class="card-title">Today's Habits</h2>
+      <div class="filter-row" id="filter-row"></div>
+      <div id="habits-list"></div>
+      <div class="bottom-row" id="reset-row"></div>
+    </section>
+
+    <!-- Notes Section -->
+    <section class="card">
+      <h2 class="card-title">Notes</h2>
+      <textarea id="note-input" placeholder="Add a note for today..."></textarea>
+      <p class="err" id="note-err"></p>
+      <div class="save-note-row">
+        <button onclick="addNote()">Save Note</button>
+      </div>
+      <div id="notes-list"></div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

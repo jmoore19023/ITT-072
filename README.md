@@ -1,5 +1,10 @@
-# John Moore — ITT 072 - Web Scripting II
+# John Moore — Web Scripting II
 
-GitHub Codespace for Web Scripting II and ITT Seminar class. Here is where I will push assignments and showcase the skills I've developed.
+**Repo:** https://github.com/jmoore19023/JM-Web-Scripting-II
 
-**Repo:** https://github.com/jmoore19023/ITT-072
+## Habit Tracker Dashboard
+
+Built with HTML, CSS, and JavaScript. Central state object drives all page updates. Add, complete, filter, and delete habits by category. Notes section with timestamps.
+
+Link to assignment below:
+https://jmoore19023.github.io/JM-Web-Scripting-II/habit-tracker.html
