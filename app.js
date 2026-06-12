@@ -1,10 +1,10 @@
 const state = {
   habits: [
-    { id: 1, name: "Drink water wiith each meal", category: "health",   done: false },
+    { id: 1, name: "Drink water with each meal", category: "health", done: false },
     { id: 2, name: "Study/Read for 20 minutes", category: "personal", done: false },
-    { id: 3, name: "Check/Complete assignemnts", category: "school",   done: false },
-    { id: 4, name: "Audit report pipelines are functioning", category: "work",   done: false },
-    { id: 5, name: "Read book with kids",category: "personal",   done: false }
+    { id: 3, name: "Check/Complete assignments", category: "school", done: false },
+    { id: 4, name: "Audit report pipelines are functioning", category: "work", done: false },
+    { id: 5, name: "Read book with kids",category: "personal", done: false }
   ],
   notes:        [],
   filter:       "all",
