@@ -8,7 +8,7 @@ const state = {
   ],
   notes:        [],
   filter:       "all",
-  nextId:       4,
+  nextId:       6,
   confirmHabit: null,
   confirmNote:  null,
   confirmReset: false
