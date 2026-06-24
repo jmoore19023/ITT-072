@@ -5,3 +5,13 @@ export const goals = [
   { id: 4, text: "Complete all Web Scripting II projects", status: "not started" },
   { id: 5, text: "Deploy everything to GitHub Pages", status: "not started" }
 ];
+
+export const currentSkills = [
+  "SQL", "Python", "JavaScript", "HTML & CSS", "Power Query",
+  "Git & GitHub", "Qlik", "Power Automate", "ETL / MES Integration"
+];
+
+export const learningSkills = [
+  "React", "TypeScript", "REST APIs", "Power BI",
+  "Node.js", "Data Visualization", "Chart.js"
+];
