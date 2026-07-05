@@ -1,15 +1,16 @@
-function Header() {
+function About() {
   return (
-    <header>
-      <h1>John Moore</h1>
-      <p>Continuous Improvement Operations Specialist → Data Analytics & BI</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-      </nav>
-    </header>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Continuous Improvement Operations Specialist at Graphic Packaging International 
+        with 8+ years across operations, data, and systems work. Finishing an AAS in 
+        Computer Programming at Lake Land College. Focused on transitioning into data 
+        analytics and business intelligence — building the technical foundation to work 
+        closer to the data side of operations.
+      </p>
+    </section>
   );
 }
 
-export default Header;
+export default About;
