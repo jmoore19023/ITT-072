@@ -17,3 +17,11 @@ https://jmoore19023.github.io/ITT-072/Habit-Tracker.html
 Built with Vite, HTML, CSS, and JavaScript. Goals and skills rendered dynamically from exported arrays. Filter interaction on the goals section. Deployed to GitHub Pages via gh-pages branch.
 
 https://jmoore19023.github.io/ITT-072/
+
+---
+
+## React Component Portfolio
+
+Built with Vite and React. Component-based portfolio with reusable ProjectCard component rendered from a data array. Separate components for Header, About, Skills, and Footer.
+
+https://jmoore19023.github.io/ITT-072/project-3-react-app/
