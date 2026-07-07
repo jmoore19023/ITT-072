@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — John Moore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">jm<span>.</span>portfolio</span>
+    <div class="nav-links" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="projects-hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="section-label">Projects</span>
+    <h1 class="section-title">Real systems.<br>Real problems.</h1>
+    <p class="section-desc" style="margin-bottom:0;">Every project on this page started with something broken, missing, or invisible on the plant floor. Each one still runs.</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+
+    <!-- FEATURED: MES -->
+    <div class="project-featured-card" style="margin-bottom:2rem;">
+      <div class="project-featured-header">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;">
+          <div>
+            <span class="section-label" style="margin-bottom:0.4rem;">Featured Project</span>
+            <h2 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;letter-spacing:-0.02em;">Ignition MES Implementation</h2>
+          </div>
+          <span class="feat-status feat-status-live" style="align-self:flex-start;">Live</span>
+        </div>
+        <p class="project-featured-meta">Role: CI Facilitator &nbsp;·&nbsp; Scope: 100+ Machines &nbsp;·&nbsp; Platform: Inductive Automation Ignition</p>
+      </div>
+      <div class="project-featured-body">
+        <div class="case-block">
+          <span class="case-block-title">The Problem</span>
+          <p>Our facility lacked real-time visibility into machine performance across over 100 pieces of equipment — presses, extruders, formers, cutters, and thermoformers. Operators had no live KPI feedback, and data collection was inconsistent and manual.</p>
+        </div>
+        <div class="case-block">
+          <span class="case-block-title">My Role</span>
+          <p>I facilitated the full MES rollout at the plant level, coordinating across department managers, the site electrical engineer, and corporate IoT teams:</p>
+          <ul>
+            <li>Kept the rollout on schedule and escalated issues as they arose</li>
+            <li>Verified tag values and system outputs as equipment came online</li>
+            <li>Coordinated between on-site teams and corporate IoT to validate solutions</li>
+            <li>Identified and organized locations for KPI displays and dashboards</li>
+            <li>Trained 700+ managers and operators as system super users</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <span class="case-block-title">The Outcome</span>
+          <p>Operators now have live visibility into their performance through strategically placed KPI dashboards. Data that previously required manual collection is now captured automatically, laying the groundwork for deeper cross-system analysis.</p>
+        </div>
+        <div class="embed-wrap">
+          <span class="embed-label">A quick overview of the Inductive Automation Ignition platform used in this implementation.</span>
+          <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/7RWmfIVDkN8?si=Fxb-OCwRSbwKJk2J" title="What is Ignition MES" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPANDABLE PROJECTS -->
+    <span class="section-label" style="margin-bottom:1rem;">Additional Professional Projects</span>
+    <p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:1.5rem;">Click any card to expand the full case study.</p>
+
+    <div class="expandable-grid">
+      <article class="exp-card" tabindex="0" onclick="toggleDetail('forming',this)" onkeydown="if(event.key==='Enter')toggleDetail('forming',this)" aria-expanded="false">
+        <span class="exp-card-icon">📋</span>
+        <h3>Forming Dept. Daily Production Report</h3>
+        <p>Replaced manual shift data collection with an automated MES API-connected workbook covering 62 shift sheets.</p>
+        <div class="exp-card-footer">
+          <div class="feat-tags"><span class="tag tag-accent">Power Query</span><span class="tag">MES API</span></div>
+          <span class="exp-hint">Expand ↓</span>
+        </div>
+      </article>
+      <article class="exp-card" tabindex="0" onclick="toggleDetail('press',this)" onkeydown="if(event.key==='Enter')toggleDetail('press',this)" aria-expanded="false">
+        <span class="exp-card-icon">🖨</span>
+        <h3>Press Production &amp; Speed Loss</h3>
+        <p>ERP-driven scrap approximation at the run level plus a structured speed loss capture overhaul across the press department.</p>
+        <div class="exp-card-footer">
+          <div class="feat-tags"><span class="tag tag-accent">ERP</span><span class="tag">Power Query</span></div>
+          <span class="exp-hint">Expand ↓</span>
+        </div>
+      </article>
+      <article class="exp-card" tabindex="0" onclick="toggleDetail('centerline',this)" onkeydown="if(event.key==='Enter')toggleDetail('centerline',this)" aria-expanded="false">
+        <span class="exp-card-icon">◎</span>
+        <h3>Centerline Effectiveness Measurement</h3>
+        <p>Anchor-date methodology and historical OEE analysis to measure whether machine centerlines actually improved performance.</p>
+        <div class="exp-card-footer">
+          <div class="feat-tags"><span class="tag tag-accent">OEE</span><span class="tag">MES</span></div>
+          <span class="exp-hint">Expand ↓</span>
+        </div>
+      </article>
+      <article class="exp-card" tabindex="0" onclick="toggleDetail('sensor',this)" onkeydown="if(event.key==='Enter')toggleDetail('sensor',this)" aria-expanded="false">
+        <span class="exp-card-icon">⊟</span>
+        <h3>Machine Sensor Fault Analysis</h3>
+        <p>Fleet-wide fault frequency report flagging both excessively faulting machines and potential sensor reliability failures.</p>
+        <div class="exp-card-footer">
+          <div class="feat-tags"><span class="tag tag-accent">MES API</span><span class="tag feat-status-progress" style="background:var(--violet-dim);color:#A78BFA;border:none;">In Progress</span></div>
+          <span class="exp-hint">Expand ↓</span>
+        </div>
+      </article>
+      <article class="exp-card" tabindex="0" onclick="toggleDetail('crosssystem',this)" onkeydown="if(event.key==='Enter')toggleDetail('crosssystem',this)" aria-expanded="false">
+        <span class="exp-card-icon">📊</span>
+        <h3>Cross-System Reporting &amp; Integration</h3>
+        <p>Merged MES, QMS, and ERP data via ODBC and API into automated Excel dashboards used daily by plant leadership.</p>
+        <div class="exp-card-footer">
+          <div class="feat-tags"><span class="tag tag-accent">ODBC</span><span class="tag">Power Query</span></div>
+          <span class="exp-hint">Expand ↓</span>
+        </div>
+      </article>
+      <article class="exp-card" tabindex="0" onclick="toggleDetail('spoilage',this)" onkeydown="if(event.key==='Enter')toggleDetail('spoilage',this)" aria-expanded="false">
+        <span class="exp-card-icon">📉</span>
+        <h3>Plant Spoilage &amp; Production Correlation</h3>
+        <p>ETL pipeline connecting ERP and MES data that were never designed to talk — providing plant-to-department spoilage visibility with 30-day trending.</p>
+        <div class="exp-card-footer">
+          <div class="feat-tags"><span class="tag tag-accent">SQL</span><span class="tag">ETL</span></div>
+          <span class="exp-hint">Expand ↓</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- DETAIL PANELS -->
+    <div id="detail-forming" class="detail-panel">
+      <button class="detail-close" onclick="closeDetail('forming')">✕ Close</button>
+      <div class="detail-header">
+        <h2>Forming Dept. Daily Production Report</h2>
+        <p class="detail-meta">Role: Developer &nbsp;·&nbsp; Scope: 2 Department Sides, 62 Shift Sheets &nbsp;·&nbsp; Tools: Excel · Power Query · MES Web API</p>
+      </div>
+      <div class="detail-blocks">
+        <div class="case-block"><span class="case-block-title">The Problem</span><p>Supervisors had to physically walk to every machine, manually record production numbers, and enter that data into an outdated workbook with no automation — twice a day, every day. No connection to live systems, no department-level visibility.</p></div>
+        <div class="case-block"><span class="case-block-title">How It Was Built</span><p>I built an analysis table inside the MES that exports as CSV. Power Query connects via the MES web API, pulling production data from all machines simultaneously. The workbook contains 62 sheets — one per shift, two per day — covering a full month. All API calls are built into a single parameterized M function so each sheet passes its own date and shift parameters into the same underlying logic. Metadata tables layer in department and machine context the raw API output couldn't provide.</p></div>
+        <div class="case-block"><span class="case-block-title">The Outcome</span><p>Supervisors no longer walk the floor to collect numbers. Production data for every line in both sides of the forming department pulls automatically on refresh. The report also serves as a shift turnover tool — supervisors log notes, flag issues, and hand off context shift to shift.</p></div>
+        <div class="case-block"><span class="case-block-title">Technical Highlights</span><ul><li>Web API connection via Power Query pulling live MES data across all machines simultaneously</li><li>Single parameterized M function drives all 62 sheet queries — one place to maintain</li><li>Metadata tables enrich raw API output with department structure and machine context</li><li>OEE and production totals calculated at line level and aggregated by department side</li></ul></div>
+      </div>
+    </div>
+
+    <div id="detail-press" class="detail-panel">
+      <button class="detail-close" onclick="closeDetail('press')">✕ Close</button>
+      <div class="detail-header">
+        <h2>Press Production Report &amp; Speed Loss Initiative</h2>
+        <p class="detail-meta">Role: Developer &nbsp;·&nbsp; Scope: Full Press Department &nbsp;·&nbsp; Tools: Excel · Power Query · ERP · Operator Production Books</p>
+      </div>
+      <div class="detail-blocks">
+        <div class="case-block"><span class="case-block-title">The Problem</span><p>No reliable way to track material consumption or approximate scrap at the run level. Speed loss was going completely uncaptured, making it impossible to identify whether slowdowns were tied to a specific job, deck, ink color, operator, or shift pattern.</p></div>
+        <div class="case-block"><span class="case-block-title">How It Was Built</span><p>The report connects to ERP via Power Query to pull run-level data for every press. Combining linear feet produced with roll count and starting linear footage yields a scrap approximation per run. For speed loss, I overhauled the department's operator production books to add structured capture fields, then joined that data to the ERP run data for trend analysis.</p></div>
+        <div class="case-block"><span class="case-block-title">The Outcome</span><p>Run-level visibility into linear feet produced, rolls consumed, and approximate scrap — all pulled automatically from ERP. The overhauled production books enabled trend analysis across job, deck, color, machine, operator, and shift.</p></div>
+        <div class="case-block"><span class="case-block-title">Technical Highlights</span><ul><li>ERP integration via Power Query pulling run-level linear feet, roll count, and starting footage per press</li><li>Scrap approximation calculated at the run level by combining ERP output with roll starting footage</li><li>Production book overhaul added structured speed loss fields with minimal operator burden</li><li>Speed loss joined to ERP run data — multi-dimensional trend analysis</li></ul></div>
+      </div>
+    </div>
+
+    <div id="detail-centerline" class="detail-panel">
+      <button class="detail-close" onclick="closeDetail('centerline')">✕ Close</button>
+      <div class="detail-header">
+        <h2>Centerline Effectiveness Measurement System</h2>
+        <p class="detail-meta">Role: Developer &nbsp;·&nbsp; Scope: Facility-Wide Machine Fleet &nbsp;·&nbsp; Tools: Excel · Power Query · MES · Historical OEE Data</p>
+      </div>
+      <div class="detail-blocks">
+        <div class="case-block"><span class="case-block-title">The Problem</span><p>Centerline events — resetting a machine to a known baseline mechanical state — are a significant investment of time and labor. Without a structured way to measure before and after OEE, there was no reliable way to know whether a centerline actually moved the needle.</p></div>
+        <div class="case-block"><span class="case-block-title">How It Was Built</span><p>An anchor date is recorded when a centerline is completed — the dividing line between before and after periods. Large sets of historical OEE data are pulled from the MES for every machine in the fleet. Power Query automates all transformation using heavy grouping, indexing, and cross-dataset compilation to align pre- and post-centerline windows per machine. Everything runs on refresh with no manual data manipulation.</p></div>
+        <div class="case-block"><span class="case-block-title">The Outcome</span><p>For the first time, the facility has a repeatable, data-driven way to evaluate the effectiveness of centerline events — specific OEE deltas tied to specific interventions, building a historical record that informs future improvement efforts.</p></div>
+        <div class="case-block"><span class="case-block-title">Technical Highlights</span><ul><li>Anchor date system records centerline completion dates as the before/after dividing line</li><li>Grouping, indexing, and cross-dataset compilation align pre/post windows per machine</li><li>All transformations automated via Power Query — no manual manipulation on refresh</li><li>Output normalizes comparison windows so OEE deltas are consistently structured</li></ul></div>
+      </div>
+    </div>
+
+    <div id="detail-sensor" class="detail-panel">
+      <button class="detail-close" onclick="closeDetail('sensor')">✕ Close</button>
+      <div class="detail-header">
+        <h2>Machine Sensor Fault Analysis Report</h2>
+        <p class="detail-meta">Role: Developer &nbsp;·&nbsp; Status: In Progress &nbsp;·&nbsp; Tools: Excel · Power Query · MES Sensor Data · Web API</p>
+      </div>
+      <div class="detail-blocks">
+        <div class="case-block"><span class="case-block-title">The Problem</span><p>High fault counts drive downtime and can signal conditions leading to defects. But very few or zero faults may indicate a sensor reliability issue. Both extremes were going undetected.</p></div>
+        <div class="case-block"><span class="case-block-title">How It Was Built</span><p>Sensor fault data is pulled from the MES via Power Query and the web API. The data is transformed to count fault occurrences per machine broken down by fault type, organized into time-based sequences. The report flags machines at both ends — high counts for mechanical review, low/zero counts as potential sensor reliability concerns. Threshold values are currently being validated against known machine histories.</p></div>
+        <div class="case-block"><span class="case-block-title">The Outcome</span><p>Maintenance and CI will have a tool to proactively identify two categories of risk that were previously invisible — machines stopping excessively, and machines where sensors may have stopped doing their job.</p></div>
+        <div class="case-block"><span class="case-block-title">Technical Highlights</span><ul><li>MES sensor fault data pulled via Power Query and web API</li><li>Two-tailed flagging: high counts flagged for review, zero counts flagged for sensor reliability</li><li>Fault frequency tracked over time to surface behavioral trends per machine</li><li>Side-by-side machine comparison for fleet-wide prioritization</li></ul></div>
+      </div>
+    </div>
+
+    <div id="detail-crosssystem" class="detail-panel">
+      <button class="detail-close" onclick="closeDetail('crosssystem')">✕ Close</button>
+      <div class="detail-header">
+        <h2>Cross-System Reporting &amp; Data Integration</h2>
+        <p class="detail-meta">Role: Developer &nbsp;·&nbsp; Tools: Excel · Power Query · BI Tools · Access · MES · QMS · ERP</p>
+      </div>
+      <div class="detail-blocks">
+        <div class="case-block"><span class="case-block-title">The Problem</span><p>MES, QMS, and ERP each held a piece of the picture but no one was looking at all three together. Cross-system insights required manual exports and hours of reconciliation.</p></div>
+        <div class="case-block"><span class="case-block-title">How It Was Built</span><p>Using ODBC connections and API responses, Power Query pulls data directly from all three source systems into a single Excel layer. Transformation logic joins, cleans, and shapes the data into consistent output tables that feed dashboards. Reports refresh against live data — no manual exports, no copy-paste reconciliation.</p></div>
+        <div class="case-block"><span class="case-block-title">The Outcome</span><p>Leadership has a fuller picture of performance, quality, and operational efficiency in one place. Insights that required hours of manual work are available on demand.</p></div>
+        <div class="case-block"><span class="case-block-title">Technical Highlights</span><ul><li>ODBC connections and REST API responses pulling live data from MES, QMS, and ERP simultaneously</li><li>Access databases used as intermediate query layer for legacy data sources</li><li>Designed for maintainability — no developer required to run or refresh reports</li></ul></div>
+      </div>
+    </div>
+
+    <div id="detail-spoilage" class="detail-panel">
+      <button class="detail-close" onclick="closeDetail('spoilage')">✕ Close</button>
+      <div class="detail-header">
+        <h2>Plant Spoilage &amp; Production Correlation Report</h2>
+        <p class="detail-meta">Role: Developer &nbsp;·&nbsp; Tools: Power Query · SQL · MES API · ERP</p>
+      </div>
+      <div class="detail-blocks">
+        <div class="case-block"><span class="case-block-title">The Problem</span><p>The plant was tracking spoilage at a surface level — units were being scrapped but there was no reliable way to know where in the plant it was coming from or what was driving it. The ERP and MES weren't connected and held complementary pieces of the answer.</p></div>
+        <div class="case-block"><span class="case-block-title">How It Was Built</span><p>Connected the ERP via SQL and the MES via its REST API, then handled all ETL in Power Query using custom scaffolding and index key merges to join the two datasets. Built a 30-day trending view that breaks spoilage down from plant level to individual departments and correlates it against production volume.</p></div>
+        <div class="case-block"><span class="case-block-title">The Outcome</span><p>Leadership went from almost no visibility into spoilage patterns to a real-time report they use to identify problem areas, investigate root causes, and make data-driven decisions about where to focus improvement efforts.</p></div>
+        <div class="case-block"><span class="case-block-title">Technical Highlights</span><ul><li>SQL connection to ERP and REST API connection to MES in a single Power Query flow</li><li>Custom scaffolding and index key merges join datasets that share no native key</li><li>30-day trending view with plant-to-department drill-down</li><li>Production correlation layer identifies whether high spoilage tracks with higher output</li></ul></div>
+      </div>
+    </div>
+
+    <!-- ACADEMIC PROJECTS -->
+    <div style="margin-top:4rem;">
+      <span class="section-label">Academic & Personal Projects</span>
+      <h2 class="section-title" style="margin-bottom:0.75rem;">Building the technical foundation</h2>
+      <p class="section-desc">Coursework and personal projects that reflect what I'm learning and where I'm headed.</p>
+      <div class="academic-grid">
+        <div class="acad-card">
+          <span class="acad-icon">📊</span>
+          <h3>Habit Tracker Dashboard</h3>
+          <p>State-driven dashboard built with vanilla HTML, CSS, and JavaScript. Features CRUD functionality, category filtering, streak tracking, note timestamps, and a warm dark mode. Full data and UI layer separation.</p>
+          <div class="acad-links">
+            <a href="https://jmoore19023.github.io/JM-Web-Scripting-I/Habit-Tracker/index.html" target="_blank" class="acad-link">Live Demo →</a>
+            <a href="https://github.com/jmoore19023" target="_blank" class="acad-link">GitHub →</a>
+          </div>
+          <div class="feat-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+        </div>
+        <div class="acad-card">
+          <span class="acad-icon">🐍</span>
+          <h3>Moore Plants &amp; Pots</h3>
+          <p>Five-file Python inventory and purchase order management system with three custom classes, 15+ functions, search, sort, and seven reports. JSON persistence. Written to be readable and defensible line by line.</p>
+          <div class="acad-links">
+            <a href="https://github.com/jmoore19023" target="_blank" class="acad-link">GitHub →</a>
+          </div>
+          <div class="feat-tags"><span class="tag">Python</span><span class="tag">OOP</span><span class="tag">JSON</span></div>
+        </div>
+        <div class="acad-card">
+          <span class="acad-icon">⚛️</span>
+          <h3>React Developer Dashboard</h3>
+          <p>Interactive developer metrics dashboard built in React with dark mode, filtering, and real-time stat cards. Demonstrates component architecture, state management with hooks, and responsive layout.</p>
+          <div class="acad-links">
+            <a href="https://github.com/jmoore19023" target="_blank" class="acad-link">GitHub →</a>
+          </div>
+          <div class="feat-tags"><span class="tag">React</span><span class="tag">Hooks</span><span class="tag">Tailwind</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner container">
+    <div>
+      <p class="footer-brand">John <span>Moore</span></p>
+      <p class="footer-desc">CI & Data Analytics Professional based in Central Illinois. Open to remote opportunities.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://www.linkedin.com/in/johnmoore-ci" target="_blank">LinkedIn</a>
+      <a href="https://github.com/jmoore19023" target="_blank">GitHub</a>
+      <a href="mailto:jmoore19023@gmail.com">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy container">&copy; 2026 John Moore &mdash; Central Illinois</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

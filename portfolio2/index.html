@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Moore — Data & CI Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">jm<span>.</span>portfolio</span>
+    <div class="nav-links" id="primaryNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+
+  <div class="hero-layout">
+    <div class="hero-frame">
+    <div class="hero-top">
+
+      <!-- LEFT: Identity -->
+      <div class="hero-identity">
+        <p class="hero-eyebrow">Central Illinois &mdash; Open to Remote</p>
+        <h1 class="hero-title">John <span class="accent">Moore</span></h1>
+        <p class="hero-subtitle">CI &amp; Data Analytics Professional<span class="cursor"></span></p>
+        <p class="hero-desc">I started on the plant floor and worked my way into data. Eight years in manufacturing taught me that the most valuable insights are the ones nobody thought to look for yet — and I build the tools that find them.</p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn">View My Work</a>
+          <a href="about.html" class="btn-outline">About Me</a>
+          <a href="contact.html" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Featured project rotator -->
+      <div class="project-rotator">
+        <div class="rotator-header">
+          <span class="rotator-label">Featured Work</span>
+          <div class="rotator-controls">
+            <button class="rotator-btn" id="rotatorPrev" aria-label="Previous project">←</button>
+            <span class="rotator-counter"><span id="rotatorCurrent">1</span> / <span id="rotatorTotal">4</span></span>
+            <button class="rotator-btn" id="rotatorNext" aria-label="Next project">→</button>
+          </div>
+        </div>
+
+        <div class="rotator-body" id="rotatorBody">
+
+          <!-- PROJECT 1 -->
+          <div class="rotator-slide active">
+            <div class="rotator-slide-top">
+              <div class="rotator-icon">Data</div>
+              <span class="rotator-status live">Live</span>
+            </div>
+            <p class="rotator-project-num">Project 01 — Data Integration</p>
+            <h3 class="rotator-title">Plant Spoilage &amp; Production Correlation</h3>
+            <p class="rotator-desc">ETL pipeline connecting ERP and MES — two enterprise systems never designed to talk. Custom scaffolding and index key joins in Power Query provide plant-to-department spoilage visibility with 30-day trending and production correlation.</p>
+            <div class="rotator-tags">
+              <span>SQL</span><span>Power Query</span><span>MES API</span><span>ETL</span><span>ERP</span>
+            </div>
+            <a href="projects.html" class="rotator-link">View case study →</a>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="rotator-slide">
+            <div class="rotator-slide-top">
+              <div class="rotator-icon">Systems</div>
+              <span class="rotator-status live">Live</span>
+            </div>
+            <p class="rotator-project-num">Project 02 — Implementation</p>
+            <h3 class="rotator-title">Ignition MES Implementation</h3>
+            <p class="rotator-desc">Facilitated a full plant-wide MES rollout across 100+ pieces of equipment. Co-led with the site electrical engineer, trained 700+ employees, verified all system outputs, and coordinated with corporate IoT teams to resolve connectivity issues.</p>
+            <div class="rotator-tags">
+              <span>MES</span><span>Ignition</span><span>IoT</span><span>Change Management</span>
+            </div>
+            <a href="projects.html" class="rotator-link">View case study →</a>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="rotator-slide">
+            <div class="rotator-slide-top">
+              <div class="rotator-icon">Optimize</div>
+              <span class="rotator-status live">Live</span>
+            </div>
+            <p class="rotator-project-num">Project 03 — Optimization</p>
+            <h3 class="rotator-title">Press Schedule Optimizer</h3>
+            <p class="rotator-desc">Scheduling optimization tool built in Power Query M that groups print jobs by shared ink colors to minimize press changeover time across a two-press flexographic operation running ~65 rolls per day. Greedy logic with forward-looking ink eviction.</p>
+            <div class="rotator-tags">
+              <span>Power Query M</span><span>Optimization</span><span>Scheduling</span>
+            </div>
+            <a href="projects.html" class="rotator-link">View case study →</a>
+          </div>
+
+          <!-- PROJECT 4 -->
+          <div class="rotator-slide">
+            <div class="rotator-slide-top">
+              <div class="rotator-icon">Analysis</div>
+              <span class="rotator-status progress">In Progress</span>
+            </div>
+            <p class="rotator-project-num">Project 04 — Anomaly Detection</p>
+            <h3 class="rotator-title">Machine Sensor Fault Analysis</h3>
+            <p class="rotator-desc">Fleet-wide fault frequency report pulling MES sensor data via API. Flags machines at both extremes — excessive faults as mechanical risk, zero faults during runtime as potential sensor reliability failures. Two-tailed anomaly detection.</p>
+            <div class="rotator-tags">
+              <span>MES API</span><span>Power Query</span><span>Anomaly Detection</span>
+            </div>
+            <a href="projects.html" class="rotator-link">View case study →</a>
+          </div>
+
+        </div>
+
+        <!-- Progress dots -->
+        <div class="rotator-dots" id="rotatorDots">
+          <button class="rotator-dot active" data-index="0" aria-label="Project 1"></button>
+          <button class="rotator-dot" data-index="1" aria-label="Project 2"></button>
+          <button class="rotator-dot" data-index="2" aria-label="Project 3"></button>
+          <button class="rotator-dot" data-index="3" aria-label="Project 4"></button>
+        </div>
+      </div>
+
+    </div>
+    </div><!-- /.hero-frame -->
+
+    <!-- BOTTOM: Stats strip -->
+    <div class="hero-stats-strip">
+      <div class="hero-stat">
+        <span class="hero-stat-num">8+</span>
+        <span class="hero-stat-label">Years in Operations</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">700+</span>
+        <span class="hero-stat-label">Employees Trained</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">5+</span>
+        <span class="hero-stat-label">Reporting Systems Built</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">2</span>
+        <span class="hero-stat-label">Enterprise Implementations</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">AAS</span>
+        <span class="hero-stat-label">Computer Programming — 2026</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS STRIP -->
+<div class="tools-strip">
+  <div class="tools-track">
+    <span>SQL</span><span>Power Query</span><span>MES Integration</span><span>ETL Pipelines</span><span>PowerShell</span><span>Power Automate</span><span>Qlik</span><span>Python</span><span>JavaScript</span><span>React</span><span>ERP Systems</span><span>Process Documentation</span><span>Continuous Improvement</span><span>Data Analytics</span>
+    <span aria-hidden="true">SQL</span><span aria-hidden="true">Power Query</span><span aria-hidden="true">MES Integration</span><span aria-hidden="true">ETL Pipelines</span><span aria-hidden="true">PowerShell</span><span aria-hidden="true">Power Automate</span><span aria-hidden="true">Qlik</span><span aria-hidden="true">Python</span><span aria-hidden="true">JavaScript</span><span aria-hidden="true">React</span><span aria-hidden="true">ERP Systems</span><span aria-hidden="true">Process Documentation</span><span aria-hidden="true">Continuous Improvement</span><span aria-hidden="true">Data Analytics</span>
+  </div>
+</div>
+
+<!-- FEATURED WORK -->
+<section class="section section-alt">
+  <div class="container">
+    <span class="section-label">All Projects</span>
+    <h2 class="section-title">Built for real operations</h2>
+    <p class="section-desc">These aren't class projects. These are tools used daily by supervisors and leadership at a 700-person manufacturing facility.</p>
+    <div class="featured-grid">
+      <div class="feat-card feat-card-wide">
+        <div class="feat-card-top">
+          <span class="feat-icon">⚙</span>
+          <span class="feat-status feat-status-live">Live</span>
+        </div>
+        <h3>Ignition MES Implementation</h3>
+        <p>Facilitated the full plant-wide MES rollout across 100+ pieces of equipment, coordinating between department managers, the site electrical engineer, and corporate IoT teams. Trained 700+ employees and verified system outputs across the entire facility.</p>
+        <div class="feat-tags">
+          <span class="tag tag-accent">MES</span>
+          <span class="tag tag-accent">Ignition</span>
+          <span class="tag">IoT</span>
+          <span class="tag">Change Management</span>
+          <span class="tag">Training</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-card-top">
+          <span class="feat-icon">📊</span>
+          <span class="feat-status feat-status-live">Live</span>
+        </div>
+        <h3>Plant Spoilage &amp; Production Correlation</h3>
+        <p>ETL pipeline connecting ERP (SQL) and MES (REST API) — two systems never designed to talk. Custom scaffolding and index key joins in Power Query. Plant-to-department spoilage visibility with 30-day trending.</p>
+        <div class="feat-tags">
+          <span class="tag tag-accent">Power Query</span>
+          <span class="tag tag-accent">SQL</span>
+          <span class="tag">MES API</span>
+          <span class="tag">ETL</span>
+        </div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-card-top">
+          <span class="feat-icon">🖨</span>
+          <span class="feat-status feat-status-live">Live</span>
+        </div>
+        <h3>Press Schedule Optimizer</h3>
+        <p>Scheduling optimization tool in Power Query M that groups print jobs by shared ink colors to minimize press changeover time. Greedy scheduling logic with forward-looking ink eviction.</p>
+        <div class="feat-tags">
+          <span class="tag tag-accent">Power Query M</span>
+          <span class="tag">Optimization</span>
+          <span class="tag">Scheduling Logic</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2rem; text-align:center;">
+      <a href="projects.html" class="btn-outline">See All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+  <div class="container">
+    <span class="section-label">Skills</span>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-strip">
+      <div class="skill-pill">
+        <span class="skill-pill-label">Data & Analytics</span>
+        <ul>
+          <li>SQL</li>
+          <li>Power Query (ETL)</li>
+          <li>Business Intelligence (Qlik)</li>
+          <li>MES & ERP Integration</li>
+          <li>Dashboard Development</li>
+        </ul>
+      </div>
+      <div class="skill-pill">
+        <span class="skill-pill-label">Automation</span>
+        <ul>
+          <li>PowerShell</li>
+          <li>Power Automate</li>
+          <li>Task Scheduler</li>
+          <li>Excel (Advanced)</li>
+        </ul>
+      </div>
+      <div class="skill-pill">
+        <span class="skill-pill-label">Programming</span>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML / CSS</li>
+          <li>React</li>
+        </ul>
+      </div>
+      <div class="skill-pill">
+        <span class="skill-pill-label">Professional</span>
+        <ul>
+          <li>Continuous Improvement</li>
+          <li>Process Documentation</li>
+          <li>Project Coordination</li>
+          <li>Training & Development</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner container">
+    <div>
+      <p class="footer-brand">John <span>Moore</span></p>
+      <p class="footer-desc">CI & Data Analytics Professional based in Central Illinois. Open to remote opportunities in data, BI, and process improvement.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://www.linkedin.com/in/johnmoore-ci" target="_blank">LinkedIn</a>
+      <a href="https://github.com/jmoore19023" target="_blank">GitHub</a>
+      <a href="mailto:jmoore19023@gmail.com">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy container">&copy; 2026 John Moore &mdash; Central Illinois</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
