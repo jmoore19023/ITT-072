@@ -33,3 +33,11 @@ https://jmoore19023.github.io/ITT-072/project-3-react-app/
 Built with Vite and React. Developer dashboard with dark mode toggle, project filter by tech stack, and goal filter by status. State managed with useState across three components.
 
 https://jmoore19023.github.io/ITT-072/project-4-interactive-dashboard/
+
+---
+
+## Moore Plants & Pots Chatbot Assistant
+
+Built with Vite and React. Moore Plants and Pots inventory assistant with keyword-based response engine, controlled form input, validation, typing indicator, and chat bubble UI.
+
+https://jmoore19023.github.io/ITT-072/project-5-chatbot/
