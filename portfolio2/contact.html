@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — John Moore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">jm<span>.</span>portfolio</span>
+    <div class="nav-links" id="primaryNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+      <button class="nav-hamburger" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="contact-hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="section-label">Contact</span>
+    <h1 class="section-title">Let's connect</h1>
+    <p class="section-desc" style="margin-bottom:0;">Whether you have an opportunity, a question, or just want to talk data — feel free to reach out.</p>
+  </div>
+</div>
+
+<div class="contact-layout">
+  <div class="contact-form-card">
+    <h2 style="font-family:var(--font-display);font-size:1.25rem;font-weight:600;margin-bottom:1.5rem;">Send a Message</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name <span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required />
+      </div>
+      <div class="form-group">
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option value="" disabled selected>Select a topic</option>
+          <option value="opportunity">Job Opportunity</option>
+          <option value="collaboration">Collaboration</option>
+          <option value="networking">Networking</option>
+          <option value="question">General Question</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preferred Contact Method</label>
+        <div class="radio-group">
+          <label><input type="radio" name="contact-method" value="email" checked /> Email</label>
+          <label><input type="radio" name="contact-method" value="linkedin" /> LinkedIn</label>
+          <label><input type="radio" name="contact-method" value="either" /> Either</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Message <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn" style="width:100%;">Send Message</button>
+    </form>
+  </div>
+
+  <div class="contact-sidebar">
+    <div class="contact-info-card">
+      <h3>Contact Info</h3>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉</div>
+        <div>
+          <p class="contact-detail-label">Email</p>
+          <a href="mailto:jmoore19023@gmail.com">jmoore19023@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">in</div>
+        <div>
+          <p class="contact-detail-label">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/johnmoore-ci" target="_blank">linkedin.com/in/johnmoore-ci</a>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">&lt;/&gt;</div>
+        <div>
+          <p class="contact-detail-label">GitHub</p>
+          <a href="https://github.com/jmoore19023" target="_blank">github.com/jmoore19023</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-note">
+      <p>I typically respond within 1–2 business days. For faster responses, LinkedIn is the best way to reach me.</p>
+      <p style="margin-top:0.75rem;">I'm currently open to remote opportunities in data analytics, business intelligence, and continuous improvement roles.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner container">
+    <div>
+      <p class="footer-brand">John <span>Moore</span></p>
+      <p class="footer-desc">CI & Data Analytics Professional based in Central Illinois. Open to remote opportunities.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://www.linkedin.com/in/johnmoore-ci" target="_blank">LinkedIn</a>
+      <a href="https://github.com/jmoore19023" target="_blank">GitHub</a>
+      <a href="mailto:jmoore19023@gmail.com">Email</a>
+    </div>
+  </div>
+  <p class="footer-copy container">&copy; 2026 John Moore &mdash; Central Illinois</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
