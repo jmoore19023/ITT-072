@@ -41,3 +41,11 @@ https://jmoore19023.github.io/ITT-072/project-4-interactive-dashboard/
 Built with Vite and React. Moore Plants and Pots inventory assistant with keyword-based response engine, controlled form input, validation, typing indicator, and chat bubble UI.
 
 https://jmoore19023.github.io/ITT-072/project-5-chatbot/
+
+---
+
+## Final Portfolio — React App
+
+React portfolio with integrated personal assistant chatbot. Animated canvas background, six-project rotator, expandable GPI case study cards, dark/light mode toggle, and keyword-based chat assistant. Built with Vite and React.
+
+https://jmoore19023.github.io/ITT-072/final-portfolio/
